@@ -59,7 +59,7 @@ plot_point(PBase,'*');
 
 
 %% Point P wrt Robot
-PRobot = HBaseRobot * e2h(PBase)
+PRobot = HBaseRobot * e2h(PBase)     %e2h function is used to make PBase matrix from Euclidean to homogeneous (change the dimension of matrix to 3*1
 
 %% Point P wrt Camera
 PCam = HBaseCam * e2h(PBase)
